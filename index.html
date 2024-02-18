@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/send-message-icon-vector-20962449.jpg" />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="Contact-left"
+      >
+        <div class="contant-left-tittle">
+          <h3>Get in touch</h3>
+          <hr />
+        </div>
+        <!-- access_key -->
+        <input
+          type="hidden"
+          name="access_key"
+          value="95a62841-e8a0-40f7-836a-5af1341d31a1"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Enter your name"
+          class="inputs"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="inputs"
+          required
+        />
+        <textarea
+          name="text"
+          placeholder="Your message"
+          class="inputs"
+        ></textarea>
+        <button>
+          Sumbit
+        </button>
+      </form>
+      <div class="contact-right">
+        <img src="images/backgroundimage.png" alt="two persons image" />
+      </div>
+    </div>
+  </body>
+</html>

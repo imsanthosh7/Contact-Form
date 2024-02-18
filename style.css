@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.Contact-left h3 {
+  font-size: 30px;
+  color: rgb(196, 148, 164);
+}
+
+.Contact-left hr {
+  width: 90px;
+  height: 6px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(196, 148, 164);
+}
+
+.inputs {
+  width: 300px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding: 10px 10px;
+  background-color: rgb(152, 193, 202);
+  color: #fff;
+}
+
+.inputs:focus {
+  border: 2px solid rgb(73, 112, 120);
+}
+
+.Contact-left textarea {
+  height: 100px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+button {
+  width: 90px;
+  height: 40px;
+  padding: 10px auto;
+  padding-right: 3px;
+  border: 3px solid rgb(219, 169, 98);
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+button:hover {
+  background: rgb(219, 169, 98);
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.contact-right img {
+  width: 370px;
+  margin-top: 19px;
+}
+
+@media(max-width:800px) {
+  .Contact-left {
+    width: 80vw;
+  }
+
+  .contact-right {
+    display: none;
+  }
+}
